@@ -42,7 +42,7 @@ const lipaNaMpesa = async (partyA, partyB, amount) => {
     // Construct the request body
     const password = generatePassword();
     const requestBody = {
-      SecurityCredential: "YOUR_SECURITY_CREDENTIAL",
+      SecurityCredential: "",
       BusinessShortCode: "174379",
       Password: password,
       Timestamp: generateTimestamp(),
