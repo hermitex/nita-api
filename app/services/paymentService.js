@@ -2,7 +2,7 @@
 const axios = require("axios");
 
 const paymentRepository = require("../repositories/paymentRepository");
-// Constants (replace with your actual values)
+// Constants
 const consumerKey = "ogpxpuJ3hT0jpUALlLwOKOjGceklTP42";
 const consumerSecret = "TDa2ueM0LGEF1z44";
 const shortcode = "174379";
@@ -69,7 +69,7 @@ const lipaNaMpesa = async (partyA, partyB, amount) => {
       headers
     );
 
-    // Process the payment response as needed
+ 
 
     const getCallBackheaders = {
       "Content-Type": "application/json",
