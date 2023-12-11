@@ -431,7 +431,7 @@ const studentCourseEnrollmentNotification = `<!DOCTYPE html PUBLIC "-//W3C//DTD 
                                 <div>
                                   <p>
                                     Your course is scheduled to start from
-                                    {{Start Date}} and end on {{End Date}}.
+                                    {{StartDate}} and end on {{EndDate}}.
                                   </p>
 
                                   <p>
@@ -1229,8 +1229,12 @@ const adminRegistrationAdminNotification = `<!DOCTYPE html PUBLIC "-//W3C//DTD X
                                  
 
                                   <p>
-                                    There is a new course enrolled for
-                                    {{CourseName}} by {{StudentName}}.
+                                    There is a new course <em>enrollment</em> for
+                                   <strong>{{CourseName}} </strong> by <strong>{{StudentName}}</strong>.
+                                  </p>
+
+                                  <p>
+                                    Login to the system and ensure they have the necessary materials to accomplish their training goals.
                                   </p>
 
                                

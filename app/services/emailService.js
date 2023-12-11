@@ -53,6 +53,8 @@ exports.sendEmail = async ({
             { placeholder: "{{StudentName}}", value: studentName },
             { placeholder: "{{StartDate}}", value: startDate },
             { placeholder: "{{EndDate}}", value: endDate },
+            { placeholder: "{{ContactEmail}}", value: contactEmail },
+            { placeholder: "{{ContactPhone}}", value: contactPhone },
           ];
          
         template = studentCourseEnrollmentNotification;
@@ -62,7 +64,7 @@ exports.sendEmail = async ({
         replacements = [
             { placeholder: "{{AdminName}}", value: "Nita Admin" },
             { placeholder: "{{CourseName}}", value: courseName },
-            { placeholder: "{{StudentName}}", value: studentName },
+            { placeholder: "{{StudentName}}", value: studentName },           
           ];
        
         template = adminRegistrationAdminNotification;
@@ -85,7 +87,7 @@ exports.sendEmail = async ({
       to: recipient,
       cc: cc,
       bcc: bcc,
-      subject: `IMPORTANT: ${subject}`,
+      subject: `[IMPORTANT] ${subject}`,
       html: template,
     };
 
