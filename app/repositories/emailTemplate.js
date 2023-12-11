@@ -222,7 +222,7 @@ const studentCourseEnrollmentNotification = `<!DOCTYPE html PUBLIC "-//W3C//DTD 
                                 <div>
                                   <title>Congratulations!</title>
 
-                                  <h1>Hi {{ApplicantName}}!</h1>
+                                  <h1>Hi {{StudentName}}!</h1>
 
                                   <p>Congratulations!</p>
 

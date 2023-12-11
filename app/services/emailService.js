@@ -53,8 +53,8 @@ exports.sendEmail = async ({
             { placeholder: "{{StudentName}}", value: studentName },
             { placeholder: "{{StartDate}}", value: startDate },
             { placeholder: "{{EndDate}}", value: endDate },
-            { placeholder: "{{ContactEmail}}", value: contactEmail },
-            { placeholder: "{{ContactPhone}}", value: contactPhone },
+            { placeholder:  "{{ContactEmail}}", value: "support@nitatraining.com" },
+            { placeholder: "{{ContactPhone}}", value: "0797165741" },
           ];
          
         template = studentCourseEnrollmentNotification;
